@@ -1,0 +1,18 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# runtime artifacts -- never commit real market data, a live ledger, or
+# rendered review pages (they may contain non-public data-vendor content)
+*.db
+*.db-wal
+*.db-shm
+/data/
+/data_demo/
+/output/
+/output_demo/
+
+.env

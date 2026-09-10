@@ -1,0 +1,68 @@
+{
+  "version": "p1",
+  "setup_name": "momentum-dip",
+  "frozen_at": "2026-09-05T00:00:00Z",
+  "holdout_start": "2022-01-01",
+  "in_sample_start": "2010-01-01",
+  "in_sample_end": "2021-12-31",
+  "parameters": {
+    "U1_min_adv_20d_dollar": 2000000,
+    "U2_max_median_spread_60d_pct": 0.50,
+    "U3_min_price_history_days": 260,
+    "U4_min_price": 5.00,
+
+    "R1_regime_gate": "index_close_above_sma_200",
+
+    "M1_formation_start_months": -12,
+    "M1_formation_end_months": -2,
+    "M2_momentum_rank_threshold_pct": 0.70,
+    "M3_trend_sma_days": 100,
+
+    "D1_dip_window_days": 5,
+    "D2_dip_measure": "stock_5d_return_minus_sector_5d_return",
+    "D3_dip_rank_threshold_pct": 0.30,
+    "D4_dip_depth_floor_atr_mult": 0.5,
+    "D5_dip_depth_ceiling_atr_mult": 2.5,
+
+    "V1_turnover_veto_mult": 2.0,
+    "V2_gap_veto_atr_mult": 1.5,
+    "V2_gap_lookback_days": 5,
+    "V3_earnings_veto_window_days": 5,
+    "V4_event_veto_window_days": 3,
+    "V5_halt_veto_lookback_days": 20,
+    "V6_news_veto_lookback_days": 10,
+
+    "E1_entry_zone_atr_mult": 0.5,
+    "E2_stop_atr_mult": 2.0,
+    "E3_target_atr_mult": 4.0,
+    "E4_time_limit_trading_days": 10,
+
+    "S1_risk_per_trade_pct": 0.0075,
+    "S2_max_open_positions": 4,
+    "S3_max_positions_per_sector": 2,
+
+    "A1_max_entry_emails_per_day": 1,
+    "A1_max_entry_emails_per_week": 3,
+    "A1_min_days_between_same_symbol_signal": 15,
+
+    "ATR_window_days": 14,
+
+    "COST_commission_cad": 0.0,
+    "COST_slippage_bps_low_liquidity": 5,
+    "COST_slippage_bps_high_liquidity": 2,
+    "COST_low_liquidity_threshold_dollar": 10000000,
+
+    "MAX_POSITION_PCT_OF_ACCOUNT": 0.25
+  },
+  "news_keyword_list_version": "v1",
+  "news_keywords": [
+    "acquisition",
+    "arrangement agreement",
+    "going concern",
+    "cease trade",
+    "short report",
+    "restatement",
+    "financing",
+    "bought deal"
+  ]
+}
